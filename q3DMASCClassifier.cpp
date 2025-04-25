@@ -290,6 +290,7 @@ bool Classifier::classify(	const Feature::Source::Set& featureSources,
 		{
 			ConfusionMatrix* confusionMatrix = new ConfusionMatrix(CCCoreLib::GenericDistribution::SFAsScalarContainer(*classifSFBackup),
 				CCCoreLib::GenericDistribution::SFAsScalarContainer(*classificationSF));
+			confusionMatrix->show();
 		}
 	}
 
